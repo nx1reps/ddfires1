@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DD's Fire Hot Sauce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe5e5;
+            color: #4d0000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #e60000;
+            margin-bottom: 0.5em;
+            animation: shake 1s infinite;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: rotate(-2deg); }
+            50% { transform: rotate(2deg); }
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #4d0000;
+            margin: 1em 0;
+        }
+
+        .button {
+            background-color: #ff3333;
+            color: #ffffff;
+            padding: 1em 2em;
+            border: none;
+            border-radius: 30px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.3s;
+            margin-top: 1.5em;
+        }
+
+        .button:hover {
+            background-color: #e60000;
+            transform: scale(1.1);
+        }
+
+        .contact-section {
+            margin-top: 2em;
+        }
+
+        .emoji {
+            font-size: 2em;
+            animation: bounce 1.2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+    </style>
+</head>
+<body>
+    <h1>🌶️ DD's Fire Hot Sauce 🌶️</h1>
+    <p>Contains Spicy 🔥 peppers! Eat at your own risk! </p>
+    <div class="contact-section">
+        <button class="button" onclick="location.href='mailto:ddfiresauce@gmail.com'">Contact Us</button>
+    </div>
+</body>
+</html>
